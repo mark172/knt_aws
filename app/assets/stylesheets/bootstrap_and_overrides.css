@@ -5,3 +5,15 @@
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
+  
+.mainKntLogo {
+  width: 75%;
+}
+
+.indexTagLine {
+    margin-left: 30px;
+}
+
+.kameaBtn {
+    margin: 10px 10px 0 -390px;
+}
