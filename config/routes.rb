@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get '/about' => 'pages#about'
   get '/kameakare' => 'pages#kameakare'
   get '/zota' => 'pages#zota'
+  get '/cio' => 'pages#cio'
+  get '/bellissimail' => 'pages#bellissimail'
+  get '/staffing' => 'pages#staffing'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -10,4 +10,13 @@ class PagesController < ApplicationController
   
   def zota
   end
+  
+  def cio
+  end
+  
+  def bellissimail
+  end
+  
+  def staffing
+  end
 end
