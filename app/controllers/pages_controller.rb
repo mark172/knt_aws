@@ -7,4 +7,7 @@ class PagesController < ApplicationController
   
   def kameaKare
   end
+  
+  def zota
+  end
 end
