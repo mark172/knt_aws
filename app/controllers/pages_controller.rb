@@ -19,4 +19,7 @@ class PagesController < ApplicationController
   
   def staffing
   end
+  
+  def reticle
+  end
 end

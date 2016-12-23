@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/cio' => 'pages#cio'
   get '/bellissimail' => 'pages#bellissimail'
   get '/staffing' => 'pages#staffing'
+  get '/reticle' => 'pages#reticle'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

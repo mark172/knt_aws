@@ -21,7 +21,7 @@
                     <div class="row">
                         <div class="col-md-6 col-md-push-6">
                             <div class="">
-                                <img src="assets/demo/mockup2.png" alt="" class="img-responsive animated zoomInUp animation-delay-30">
+                                <img src="assets/knt/kntSlider1.png" alt="" class="img-responsive animated zoomInUp animation-delay-30">
                             </div>
                         </div>
                         <div class="col-md-6 col-md-pull-6">
@@ -86,7 +86,7 @@
                             <div class="carousel-caption">
                                <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">To purchase our <span>subscription based products</span></h1>
                                <div class="action-zone">
-              								   <%= link_to '<i class="fa fa-search"></i> Visit our Ebay store'.html_safe, kameakare_path, class: "kameaBtn btn-ar btn-transparent-opaque btn-xl animated fadeInUp animation-delay-25" %>
+              								   <%= link_to '<i class="fa fa-search"></i> Visit our Ebay store'.html_safe, "http://stores.ebay.com/KameaNetworks?_trksid=p2047675.l2568", :target => "_blank", class: "kameaBtn btn-ar btn-transparent-opaque btn-xl animated fadeInUp animation-delay-25" %>
               							   </div>
                                <!--<p class="animated zoomIn animation-delay-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor <span>recusandae a nulla</span> qui enim dolorem.</p>-->
                                <!--<div class="action-zone">-->
@@ -127,10 +127,10 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="text-icon wow fadeInUp">
-                    <span class="icon-ar icon-ar-lg"><%= image_tag ('/assets/knt/zotaLogo.jpg') %></span>
+                    <span class="icon-ar icon-ar-lg"><%= image_tag ('/assets/knt/zotaLogoNew.jpg') %></span>
                     <div class="text-icon-content">
-                        <h3 class="no-margin">ZOTA</h3>
-                        <p>Praesentium cumque voluptate harum quae doloribus, atque error debitis, amet velit in similique, necessitatibus odit vero sunt.</p>
+                        <h3 class="no-margin"><%= link_to "ZOTA", zota_path %></h3>
+                        <p>ZOTA is a secure, cloud-based file backup service.</p>
                     </div>
                 </div>
             </div>
@@ -138,17 +138,17 @@
                 <div class="text-icon wow fadeInUp">
                     <span class="icon-ar icon-ar-lg"><i class="fa fa-tablet"></i></span>
                     <div class="text-icon-content">
-                        <h3 class="no-margin">Virtual CIO</h3>
+                        <h3 class="no-margin"><%= link_to "Virtual CIO", cio_path %></h3>
                         <p>Praesentium cumque voluptate harum quae doloribus, atque error debitis, amet velit in similique, necessitatibus odit vero sunt.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="text-icon wow fadeInUp">
-                    <span class="icon-ar icon-ar-lg"><%= image_tag ('/assets/knt/bellisimailLogo.jpg') %></span>
+                    <span class="icon-ar icon-ar-lg"><%= image_tag ('/assets/knt/bellissimailLogoNew.jpg') %></span>
                     <div class="text-icon-content">
-                        <h3 class="no-margin">Bellissimail Pro</h3>
-                        <p>Praesentium cumque voluptate harum quae doloribus, atque error debitis, amet velit in similique, necessitatibus odit vero sunt.</p>
+                        <h3 class="no-margin"><%= link_to "Bellissimail Pro", bellissimail_path %></h3>
+                        <p>Bellissimail is our premium hosted Exchange email solution for small and medium businesses.</p>
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@
                 <div class="text-icon wow fadeInUp">
                     <span class="icon-ar icon-ar-lg"><%= image_tag ('/assets/knt/itStaffingLogoNew.jpg') %></span>
                     <div class="text-icon-content">
-                        <h3 class="no-margin">IT Staffing Solutions</h3>
+                        <h3 class="no-margin"><%= link_to "IT Staffing Solutions", staffing_path %></h3>
                         <p>Praesentium cumque voluptate harum quae doloribus, atque error debitis, amet velit in similique, necessitatibus odit vero sunt.</p>
                     </div>
                 </div>
@@ -165,8 +165,8 @@
                 <div class="text-icon wow fadeInUp">
                     <span class="icon-ar icon-ar-lg"><%= image_tag ('/assets/knt/reticleLogoNew.jpg') %></span>
                     <div class="text-icon-content">
-                        <h3 class="no-margin">Reticle</h3>
-                        <p>Praesentium cumque voluptate harum quae doloribus, atque error debitis, amet velit in similique, necessitatibus odit vero sunt.</p>
+                        <h3 class="no-margin"><%= link_to "Reticle", reticle_path %></h3>
+                        <p>Think Security without the maintenance hassles! Just a renewable subscription with no Cap-Ex costs!</p>
                     </div>
                 </div>
             </div>
