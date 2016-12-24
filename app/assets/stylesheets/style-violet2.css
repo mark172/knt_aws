@@ -5965,6 +5965,15 @@ a.feature-icon:hover {
   color: #fff;
   box-shadow: none;
 }
+@media(max-width: 767px) {
+.navbar-dark {
+  background-color: #fff;
+  background-image: none;
+  color: #fff;
+  box-shadow: none;
+  border-top: solid 1px #fff;
+}
+}
 .navbar-dark a {
   background-image: none;
 }
@@ -6045,7 +6054,7 @@ a.feature-icon:hover {
     margin-bottom: 0;
   }
   .navbar-dark .navbar-collapse {
-    border-color: #555;
+    border-color: #fff;
   }
   .navbar-dark .dropdown > a {
     border-bottom: solid 1px #555;

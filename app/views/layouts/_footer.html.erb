@@ -6,85 +6,42 @@
                 <ul class="list-unstyled three_cols">
                     <li><a href="index.html">Home</a></li>
                 </ul>
-                <!--<h3 class="footer-widget-title">Subscribe</h3>-->
-                <!--<p>Lorem ipsum Amet fugiat elit nisi anim mollit minim labore ut esse Duis ullamco ad dolor veniam velit.</p>-->
-                <!--<div class="input-group">-->
-                <!--    <input type="text" class="form-control" placeholder="Email Adress">-->
-                <!--    <span class="input-group-btn">-->
-                <!--        <button class="btn btn-ar btn-primary" type="button">Subscribe</button>-->
-                <!--    </span>-->
-                <!--</div><!-- /input-group -->
             </div>
-            <!--<div class="col-md-4">-->
-            <!--    <div class="footer-widget">-->
-            <!--        <h3 class="footer-widget-title">Recent Post</h3>-->
-            <!--        <div class="media">-->
-            <!--            <a class="pull-left" href="#"><img class="media-object" src="assets/img/demo/m2.jpg" width="75" height="75" alt="image"></a>-->
-            <!--            <div class="media-body">-->
-            <!--                <h4 class="media-heading"><a href="#">Lorem ipsum Duis quis occaecat minim lorem ipsum tempor officia labor</a></h4>-->
-            <!--                <small>August 18, 2013</small>-->
-            <!--            </div>-->
-            <!--        </div>-->
-            <!--        <div class="media">-->
-            <!--            <a class="pull-left" href="#"><img class="media-object" src="assets/img/demo/m11.jpg" width="75" height="75" alt="image"></a>-->
-            <!--            <div class="media-body">-->
-            <!--                <h4 class="media-heading"><a href="#">Lorem ipsum dolor excepteur sunt in lorem ipsum cillum tempor</a></h4>-->
-            <!--                <small>September 14, 2013</small>-->
-            <!--            </div>-->
-            <!--        </div>-->
-            <!--        <div class="media">-->
-            <!--            <a class="pull-left" href="#"><img class="media-object" src="assets/img/demo/m4.jpg" width="75" height="75" alt="image"></a>-->
-            <!--            <div class="media-body">-->
-            <!--                <h4 class="media-heading"><a href="#">Lorem ipsum Dolor cupidatat minim adipisicing et fugiat</a></h4>-->
-            <!--                <small>October 9, 2013</small>-->
-            <!--            </div>-->
-            <!--        </div>-->
-            <!--    </div>-->
-            <!--</div>-->
-            <!--<div class="col-md-4">-->
-            <!--    <div class="footer-widget">-->
-            <!--        <h3 class="footer-widget-title">Recent Works</h3>-->
-            <!--        <div class="row">-->
-            <!--            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">-->
-            <!--                <a href="#" class="thumbnail"><img src="assets/img/demo/wf1.jpg" class="img-responsive" alt="Image"></a>-->
-            <!--            </div>-->
-            <!--            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">-->
-            <!--                <a href="#" class="thumbnail"><img src="assets/img/demo/wf2.jpg" class="img-responsive" alt="Image"></a>-->
-            <!--            </div>-->
-            <!--            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">-->
-            <!--                <a href="#" class="thumbnail"><img src="assets/img/demo/wf3.jpg" class="img-responsive" alt="Image"></a>-->
-            <!--            </div>-->
-            <!--            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">-->
-            <!--                <a href="#" class="thumbnail"><img src="assets/img/demo/wf4.jpg" class="img-responsive" alt="Image"></a>-->
-            <!--            </div>-->
-            <!--        </div>-->
-            <!--    </div>-->
-            <!--</div>-->
+            <div class="col-md-4">
+                <div class="footer-widget">
+                    <h3 class="footer-widget-title"></h3>
+                    <div class="media">
+                        <div class="media-body">
+                            <a target="_blank" title="Click for the Business Review of Kamea Networks & Technology, Inc., a Computers - Sys Designers & Consult in Saint Charles IL" href="https://www.bbb.org/chicago/business-reviews/computers-sys-designers-and-consult/kamea-networks-technology-inc-in-saint-charles-il-88647581#sealclick"><img alt="Click for the BBB Business Review of this Computers - Sys Designers & Consult in Saint Charles IL" style="border: 0;" src="https://seal-chicago.bbb.org/seals/blue-seal-250-52-whitetxt-kameanetworkstechnologyinc-88647581.png" /></a>
+                            <br>
+                            <hr>
+                            <p>All names, including but not limited to KameaKare, ZOTA, Reticle, Bellissimail, the stylized URL logo, and all other graphic work and content is trademarked and copyright protected as needed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div> <!-- row -->
     </div> <!-- container -->
 </aside> <!-- footer-widgets -->
 <footer id="footer">
-    <p>&copy; 2016 <a href="#">Kamea Networks & Technology</a>, inc. All rights reserved.</p>
+    <p>&copy; 2017 Kamea Networks is an Illinois corporation.</p>
 </footer>
 
 </div> <!-- boxed -->
 </div> <!-- sb-site -->
 
 <div class="sb-slidebar sb-right sb-style-overlay">
-    <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search...">
-        <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-        </span>
-    </div><!-- /input-group -->
 
     <h2 class="slidebar-header no-margin-bottom">Navigation</h2>
     <ul class="slidebar-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio_topbar.html">Portfolio</a></li>
-        <li><a href="page_about3.html">About us</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="page_contact.html">Contact</a></li>
+        <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
+        <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About Us", about_path %></li>
+        <li class="<%= 'active' if current_page?(kameakare_path) %>"><%= link_to "KameaKare", kameakare_path %></li>
+        <li class="<%= 'active' if current_page?(zota_path) %>"><%= link_to "ZOTA", zota_path %></li>
+        <li class="<%= 'active' if current_page?(cio_path) %>"><%= link_to "Virtual CIO", cio_path %></li>
+        <li class="<%= 'active' if current_page?(bellissimail_path) %>"><%= link_to "Bellissimail", bellissimail_path %></li>
+        <li class="<%= 'active' if current_page?(staffing_path) %>"><%= link_to "Staffing", staffing_path %></li>
+        <li class="<%= 'active' if current_page?(reticle_path) %>"><%= link_to "Reticle", reticle_path %></li>
     </ul>
 
     <h2 class="slidebar-header">Social Media</h2>

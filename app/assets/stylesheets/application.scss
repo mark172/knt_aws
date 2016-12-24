@@ -31,6 +31,12 @@
     margin: 10px 10px 0 -390px;
 }
 
+@media (max-width: 767px) {
+  .kameaBtn {
+    margin: 0px;
+  }
+}
+
 .reticleContent {
     text-align: left;
 }
