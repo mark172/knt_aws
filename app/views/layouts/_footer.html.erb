@@ -4,7 +4,14 @@
             <div class="col-md-4">
                 <h3 class="footer-widget-title">Sitemap</h3>
                 <ul class="list-unstyled three_cols">
-                    <li><a href="index.html">Home</a></li>
+                  <li><%= link_to "Home", root_path %></li>
+                  <li><%= link_to "About Us", about_path %></li>
+                  <li><%= link_to "KameaKare", kameakare_path %></li>
+                  <li><%= link_to "ZOTA", zota_path %></li>
+                  <li><%= link_to "Virtual CIO", cio_path %></li>
+                  <li><%= link_to "Bellissimail", bellissimail_path %></li>
+                  <li><%= link_to "Staffing", staffing_path %></li>
+                  <li><%= link_to "Reticle", reticle_path %></li>
                 </ul>
             </div>
             <div class="col-md-4">
@@ -34,14 +41,14 @@
 
     <h2 class="slidebar-header no-margin-bottom">Navigation</h2>
     <ul class="slidebar-menu">
-        <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
-        <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About Us", about_path %></li>
-        <li class="<%= 'active' if current_page?(kameakare_path) %>"><%= link_to "KameaKare", kameakare_path %></li>
-        <li class="<%= 'active' if current_page?(zota_path) %>"><%= link_to "ZOTA", zota_path %></li>
-        <li class="<%= 'active' if current_page?(cio_path) %>"><%= link_to "Virtual CIO", cio_path %></li>
-        <li class="<%= 'active' if current_page?(bellissimail_path) %>"><%= link_to "Bellissimail", bellissimail_path %></li>
-        <li class="<%= 'active' if current_page?(staffing_path) %>"><%= link_to "Staffing", staffing_path %></li>
-        <li class="<%= 'active' if current_page?(reticle_path) %>"><%= link_to "Reticle", reticle_path %></li>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About Us", about_path %></li>
+        <li><%= link_to "KameaKare", kameakare_path %></li>
+        <li><%= link_to "ZOTA", zota_path %></li>
+        <li><%= link_to "Virtual CIO", cio_path %></li>
+        <li><%= link_to "Bellissimail", bellissimail_path %></li>
+        <li><%= link_to "Staffing", staffing_path %></li>
+        <li><%= link_to "Reticle", reticle_path %></li>
     </ul>
 
     <h2 class="slidebar-header">Social Media</h2>
@@ -82,9 +89,9 @@
 
 
 <!-- Syntaxhighlighter -->
-<script src="/assets/syntaxhighlighter/shCore.js"></script>
-<script src="/assets/syntaxhighlighter/shBrushXml.js"></script>
-<script src="/assets/syntaxhighlighter/shBrushJScript.js"></script>
+<!--<script src="/assets/syntaxhighlighter/shCore.js"></script>-->
+<!--<script src="/assets/syntaxhighlighter/shBrushXml.js"></script>-->
+<!--<script src="/assets/syntaxhighlighter/shBrushJScript.js"></script>-->
 
 <script src="/assets/DropdownHover.js"></script>
 <script src="/assets/app.js"></script>

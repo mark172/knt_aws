@@ -14,20 +14,20 @@ $(document).on('click','a.smooth', function(e){
     });
 }) (jQuery);
 
-(function( $ ) {
+// (function( $ ) {
 
-    var $container = $('.masonry-container');
-    $container.imagesLoaded( function () {
-        $container.masonry({
-            columnWidth: '.masonry-item',
-            itemSelector: '.masonry-item'
-        });
-    });
+//     var $container = $('.masonry-container');
+//     $container.imagesLoaded( function () {
+//         $container.masonry({
+//             columnWidth: '.masonry-item',
+//             itemSelector: '.masonry-item'
+//         });
+//     });
 
-})(jQuery);
+// })(jQuery);
 
 // Syntax Enable
-SyntaxHighlighter.all();
+// SyntaxHighlighter.all();
 
 jQuery(document).ready(function () {
     $('.nav').on('click mousedown mouseup touchstart touchmove', 'a.has_children', function () {
