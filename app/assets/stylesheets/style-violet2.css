@@ -2164,8 +2164,7 @@ a > .icon-ar.icon-ar-inverse:hover {
   border: solid 1px #54c8eb;
 }
 .alert-success {
-  background-color: #ddffef;
-  border: solid 1px #02c66c;
+  margin-top: 20px;
 }
 .alert-warning {
   background-color: #fceedb;
@@ -2682,6 +2681,12 @@ textarea.form-control:focus {
 }
 .panel-primary {
   border-color: #9000ec;
+}
+@media (max-width: 767px) {
+  .panel-primary {
+    border-color: #9000ec;
+    margin-top: 20px;
+  }
 }
 .panel-primary .panel-heading,
 .panel-primary .panel-footer {
