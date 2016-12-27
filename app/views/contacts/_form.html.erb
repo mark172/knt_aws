@@ -1,15 +1,76 @@
 <%= simple_form_for(@contact) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :first_name %>
-    <%= f.input :last_name %>
-    <%= f.input :email %>
-    <%= f.input :phone %>
-    <%= f.input :message %>
-  </div>
+  <!--<div class="form-inputs">-->
+  <!--  <%= f.input :first_name %>-->
+  <!--  <%= f.input :last_name %>-->
+  <!--  <%= f.input :email %>-->
+  <!--  <%= f.input :phone %>-->
+  <!--  <%= f.input :message %>-->
+  <!--</div>-->
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+
+  
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="section-title">Send us a message</h2>
+        </div>
+        <div class="col-md-8">
+            <section>
+                <p>Please get in touch with us. We can't wait to make IT easier for you!</p>
+
+                <form role="form">
+                    <div class="form-group">
+                        <%= f.input :first_name, input_html: {class: "form-control"} %>
+                    </div>
+                    <div class="form-group">
+                        <%= f.input :last_name, input_html: {class: "form-control"} %>
+                    </div>
+                    <div class="form-group">
+                        <%= f.input :email, input_html: {class: "form-control"} %>
+                    </div>
+                    <div class="form-group">
+                        <%= f.input :phone, input_html: {class: "form-control"} %>
+                    </div>
+                    <div class="form-group">
+                        <%= f.input :message, input_html: {class: "form-control", rows: "10"} %>
+                    </div>
+                    <!--<button type="submit" class="btn btn-ar btn-primary">Submit</button>-->
+                      <div class="form-actions">
+                        <%= f.button :submit %>
+                      </div>
+                    <div class="clearfix"></div>
+                </form>
+            </section>
+        </div>
+
+        <div class="col-md-4">
+            <section>
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><i class="fa fa-envelope-o"></i> Additional Information</div>
+                    <div class="panel-body">
+                        <h4 class="section-title no-margin-top">Contacts</h4>
+                        <address>
+                            <strong>Kamea Networks and Technology, Inc.</strong><br>
+                            <br>
+                            St. Charles, IL 60174<br>
+                            <abbr title="Phone">P:</abbr> (630) 812-1700 <br>
+                            Mail: <a href="#">info@kameanetworks.com</a>
+                        </address>
+
+                        <!-- Business Hours -->
+                        <!--<h4 class="section-title no-margin-top">Business Hours</h4>-->
+                        <!--<ul class="list-unstyled">-->
+                        <!--    <li><strong>Monday-Friday:</strong> 9am to 7pm</li>-->
+                        <!--    <li><strong>Saturday:</strong> 9am to 2pm</li>-->
+                        <!--    <li><strong>Sunday:</strong> Closed</li>-->
+                        <!--</ul>-->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <hr class="dotted">
+ <!-- container -->
 <% end %>
