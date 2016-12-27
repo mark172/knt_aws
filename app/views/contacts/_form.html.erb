@@ -1,16 +1,5 @@
 <%= simple_form_for(@contact) do |f| %>
-  <%= f.error_notification %>
 
-  <!--<div class="form-inputs">-->
-  <!--  <%= f.input :first_name %>-->
-  <!--  <%= f.input :last_name %>-->
-  <!--  <%= f.input :email %>-->
-  <!--  <%= f.input :phone %>-->
-  <!--  <%= f.input :message %>-->
-  <!--</div>-->
-
-
-  
     <div class="row">
         <div class="col-md-12">
             <h2 class="section-title">Send us a message</h2>
@@ -37,7 +26,7 @@
                     </div>
                     <!--<button type="submit" class="btn btn-ar btn-primary">Submit</button>-->
                       <div class="form-actions">
-                        <%= f.button :submit %>
+                        <%= f.button :submit, "Submit", class: "btn btn-primary" %>
                       </div>
                     <div class="clearfix"></div>
                 </form>
