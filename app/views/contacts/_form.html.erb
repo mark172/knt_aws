@@ -30,6 +30,10 @@
                       <div class="form-actions">
                         <%= f.button :submit, "Submit", class: "btn btn-primary" %>
                       </div>
+                      <div class="form-actions contactRecaptcha">
+                          <%= flash[:recaptcha_error] %>
+                          <%= recaptcha_tags %>
+                      </div>
                     <div class="clearfix"></div>
                 </form>
             </section>

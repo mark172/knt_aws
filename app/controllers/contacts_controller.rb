@@ -29,7 +29,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
 
     respond_to do |format|
-      if @contact.save
+      if verify_recaptcha(model: @contact) && @contact.save
         
         first_name = params[:contact][:first_name]
         last_name = params[:contact][:last_name]
