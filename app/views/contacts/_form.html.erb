@@ -8,7 +8,7 @@
             <section>
                 <p>Please get in touch with us. We can't wait to make IT easier for you!</p>
                 <br>
-                <p>* = required fields</p>
+                <p class="contactRequired">* = required fields</p>
 
                 <form role="form">
                     <div class="form-group">
@@ -18,10 +18,10 @@
                         <%= f.input :last_name, input_html: {class: "form-control"} %>
                     </div>
                     <div class="form-group">
-                        <%= f.input :email, input_html: {class: "form-control"} %>
+                        <%= f.input :email, :placeholder => "ex: info@kameanetworks.com", input_html: {class: "form-control"} %>
                     </div>
                     <div class="form-group">
-                        <%= f.input :phone, input_html: {class: "form-control"} %>
+                        <%= f.input :phone, :placeholder => "ex: 555-555-1212", input_html: {class: "form-control"} %>
                     </div>
                     <div class="form-group">
                         <%= f.input :message, input_html: {class: "form-control", rows: "10"} %>
