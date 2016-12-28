@@ -2171,8 +2171,9 @@ a > .icon-ar.icon-ar-inverse:hover {
   border: solid 1px #f0ad4e;
 }
 .alert-danger {
-  background-color: #f4cecd;
-  border: solid 1px #d9534f;
+  /*background-color: #f4cecd;*/
+  /*border: solid 1px #d9534f;*/
+  margin-top: 20px;
 }
 .alert-royal {
   background-color: #ead6f3;

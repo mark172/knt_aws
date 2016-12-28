@@ -4,7 +4,8 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
   def index
-    @contacts = Contact.all
+    # @contacts = Contact.all
+    redirect_to root_path
   end
 
   # GET /contacts/1
@@ -42,6 +43,7 @@ class ContactsController < ApplicationController
         format.html { redirect_to new_contact_path }
         format.json { render :show, status: :created, location: @contact }
       else
+        flash[:danger] = "Unable to send. Please check for errors and let us know you're a human by checking the Captcha box"
         format.html { render :new }
         format.json { render json: @contact.errors, status: :unprocessable_entity }
       end
