@@ -87,3 +87,6 @@ class ContactsController < ApplicationController
       params.require(:contact).permit(:todays_date, :first_name, :last_name, :email, :phone, :message)
     end
 end
+
+
+#test
