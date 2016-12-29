@@ -21,7 +21,7 @@
                         <%= f.input :email, :placeholder => "ex: info@kameanetworks.com", input_html: {class: "form-control"} %>
                     </div>
                     <div class="form-group">
-                        <%= f.input :phone, :placeholder => "ex: 555-555-1212", input_html: {class: "form-control"} %>
+                        <%= f.input :phone, :placeholder => "numbers only", input_html: {class: "form-control"} %>
                     </div>
                     <div class="form-group">
                         <%= f.input :message, input_html: {class: "form-control", rows: "10"} %>
@@ -31,7 +31,6 @@
                         <%= f.button :submit, "Submit", class: "btn btn-primary" %>
                       </div>
                       <div class="form-actions contactRecaptcha">
-                          <%= flash[:recaptcha_error] %>
                           <%= recaptcha_tags %>
                       </div>
                     <div class="clearfix"></div>

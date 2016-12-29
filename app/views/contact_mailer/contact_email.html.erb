@@ -9,7 +9,7 @@
     <p>First Name: <strong><%= "#{@first_name}" %></strong></p>
     <p>Last Name: <strong><%= "#{@last_name}" %></strong></p>
     <p>Email: <strong><%= "#{@email}" %></strong></p>
-    <p>Phone: <strong><%= "#{@phone}" %></strong></p>
+    <p>Phone: <strong><%= "#{number_to_phone(@phone, area_code: true)}" %></strong></p>
     <br>
     <p>Message: <strong><%= "#{@message}" %></strong></p>
   </body>
