@@ -16,6 +16,7 @@ class ContactsController < ApplicationController
   # GET /contacts/new
   def new
     @contact = Contact.new
+    @title = "Contact Kamea Networks | Kamea Networks"
   end
 
   # GET /contacts/1/edit
