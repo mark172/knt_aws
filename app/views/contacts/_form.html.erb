@@ -21,7 +21,7 @@
                         <%= f.input :email, :placeholder => "ex: info@kameanetworks.com", input_html: {class: "form-control"} %>
                     </div>
                     <div class="form-group">
-                        <%= f.input :phone, :placeholder => "numbers only", input_html: {class: "form-control"} %>
+                        <%= f.input :phone, :placeholder => "numbers only, 10 max", :maxlength => "10", input_html: {class: "form-control"} %>
                     </div>
                     <div class="form-group">
                         <%= f.input :message, input_html: {class: "form-control", rows: "10"} %>
