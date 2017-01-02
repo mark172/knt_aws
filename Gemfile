@@ -29,6 +29,10 @@ gem 'font-awesome-rails'
 gem 'simple_form'
 # Recaptcha
 gem "recaptcha", require: "recaptcha/rails"
+# HAML
+gem "haml-rails", "~> 0.9"
+# Sitemap
+gem 'sitemap_generator'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
