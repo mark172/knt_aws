@@ -4,4 +4,4 @@
 # User-agent: *
 # Disallow: /
 User-agent: *
-http://www.kameanetworks.com/sitemap.xml.gz
+Sitemap: http://www.kameanetworks.com/sitemap.xml
