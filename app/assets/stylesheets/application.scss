@@ -39,7 +39,7 @@
   .mobileLogo {
     height: 50px;
     margin-left: 70px;
-}
+  }
 }
 
 .reticleContent {
@@ -62,4 +62,13 @@
 
 .contactRecaptcha {
   margin-top: 20px;
+}
+
+.knt404 img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .knt404 img {
+    width: 90%;
+  }
 }
