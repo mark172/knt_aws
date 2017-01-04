@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def index
-    @title = "High-Quality Managed IT Services  | Kamea Networks"
-    @meta_description = "Providing high-quality IT services and improved processes while keeping costs down. Click to see more!"
+    @title = "High-Quality Managed IT Services: KameaKare, ZOTA | Kamea Networks"
+    @meta_description = "Providing managed IT services, KameaKare, ZOTA, Bellissimail and other high-quality services. Click to see more!"
   end
   
   def about
