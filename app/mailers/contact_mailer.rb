@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-    default to: 'mark@sharkwebdev.com'
+    default to: 'info@kameanetworks.com, mark@sharkwebdev.com'
     def contact_email(first_name, last_name, email, phone, message)
         @first_name = first_name
         @last_name = last_name
@@ -10,3 +10,4 @@ class ContactMailer < ActionMailer::Base
         mail(from: 'no-reply@kameanetworks.com', subject: 'KNT Website Info Request')
     end
 end
+
