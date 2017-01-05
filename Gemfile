@@ -31,10 +31,7 @@ gem 'simple_form'
 gem "recaptcha", require: "recaptcha/rails"
 # HAML
 gem "haml-rails", "~> 0.9"
-# Sitemap
-gem 'sitemap_generator'
-# Non Stupid Digest
-# gem "non-stupid-digest-assets"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

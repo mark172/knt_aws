@@ -152,8 +152,6 @@ GEM
     simple_form (3.3.1)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
-    sitemap_generator (5.2.0)
-      builder (~> 3.0)
     spring (2.0.0)
       activesupport (>= 4.2)
     sprockets (3.7.0)
@@ -202,7 +200,6 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form
-  sitemap_generator
   spring
   sqlite3
   turbolinks
