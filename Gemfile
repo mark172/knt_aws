@@ -34,6 +34,7 @@ gem "haml-rails", "~> 0.9"
 # Postgresql
 gem 'pg'
 
+gem 'unicorn', '~> 5.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -49,6 +50,11 @@ group :development, :test do
   gem 'byebug'
   # Use sqlite3 as the database for Active Record
   # gem 'sqlite3'
+  gem "capistrano", "~> 3.8"
+  gem 'capistrano-rails', '~> 1.2'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rbenv', '~> 2.0'
+  gem 'capistrano-cookbook', require: false
 end
 
 group :development do
