@@ -12,7 +12,8 @@ set :server_name, "www.kameanetworks.com kameanetworks.com"
 # at filepaths
 set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
 
-server 'www.kameanetworks.com kameanetworks.com', user: 'deploy', roles: %w{web app db}, primary: true 15
+server 'www.kameanetworks.com kameanetworks.com', user: 'deploy', roles: %w{web app db}, primary: true
+
 set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/#{fetch(:full_app_name)}"
 
 # dont try and infer something as important as environment from
