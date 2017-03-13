@@ -5,7 +5,7 @@ set :application, "knt_aws"
 set :deploy_user, 'deploy'
 
 # Github repo details
-set :scm, :git
+#set :scm, :git
 set :repo_url, "git@github.com:mark172/knt_aws.git"
 
 # Setup rbenv
