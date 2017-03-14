@@ -50,11 +50,6 @@ group :development, :test do
   gem 'byebug'
   # Use sqlite3 as the database for Active Record
   # gem 'sqlite3'
-  gem "capistrano", "~> 3.8"
-  gem 'capistrano-rails', '~> 1.2'
-  gem 'capistrano-bundler'
-  gem 'capistrano-rbenv', '~> 2.0'
-  gem 'capistrano-cookbook', require: false
 end
 
 group :development do
@@ -63,6 +58,12 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem "capistrano", "~> 3.8"
+  gem 'capistrano-rails', '~> 1.2'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rbenv', '~> 2.0'
+  gem 'capistrano-cookbook', require: false
 end
 
 group :production do
