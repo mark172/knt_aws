@@ -64,7 +64,6 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-rbenv', '~> 2.0'
   gem 'capistrano-cookbook', require: false
-  gem 'capistrano-unicorn', :require => false
 end
 
 group :production do
