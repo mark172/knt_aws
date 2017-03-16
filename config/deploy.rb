@@ -1,31 +1,13 @@
 # config valid only for current version of Capistrano
 lock "3.8.0"
 
-set :application, "knt_aws"
-set :deploy_user, 'deploy'
-
-# Github repo details
-#set :scm, :git
+set :application, "knt_do"
 set :repo_url, "git@github.com:mark172/knt_aws.git"
 
-# Setup rbenv
-set :rbenv_type, :system
-set :rbenv_ruby, '2.4.0'
-set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
-set :rbenv_map_bins, %w{rake gem bundle ruby rails}
+set :deploy_to, '/home/deploy/knt_do'
 
-# Number of releases to keep
-set :keep_releases, 5
-
-# files we want symlinking to specific entries in shared
-set :linked_files, %w{config/database.yml config/secrets.yml}
-
-# dirs we want symlinking to shared
-set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
-
-
-namespace :deploy do
-end
+append :linked_files, "config/database.yml", "config/secrets.yml"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
