@@ -40,6 +40,8 @@ GEM
       tzinfo (~> 1.1)
     airbrussh (1.1.2)
       sshkit (>= 1.6.1, != 1.7.0)
+    animate-rails (1.0.10)
+      rails
     arel (7.1.4)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -210,6 +212,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  animate-rails
   byebug
   capistrano (~> 3.8)
   capistrano-passenger

@@ -34,6 +34,8 @@ gem "haml-rails", "~> 0.9"
 # Postgresql
 gem 'pg'
 
+gem "animate-rails"
+
 #gem 'unicorn', '~> 5.1'
 
 # Use ActiveModel has_secure_password
