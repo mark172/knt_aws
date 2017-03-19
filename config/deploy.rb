@@ -4,9 +4,10 @@ lock "3.8.0"
 set :application, "knt_do"
 set :repo_url, "git@github.com:mark172/knt_aws.git"
 
-set :deploy_to, '/home/deploy/knt_do'
+set :user, "deploy"
 
-append :linked_files, "config/database.yml", "config/secrets.yml"
+
+set :stages, %w(production staging)
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
 # Default branch is :master

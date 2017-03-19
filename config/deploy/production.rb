@@ -1,6 +1,8 @@
 
-server '138.197.90.154', user: 'deploy', roles: %w{app db web}
-
+server '104.131.136.236', user: 'deploy', roles: %w{app db web}
+set :branch, "master"
+set :rails_env, "production"
+set :deploy_to, "/var/www/knt_do_production"
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
