@@ -1,12 +1,3 @@
-role :app, %w{deploy@104.131.136.236}
-role :web, %w{deploy@104.131.136.236}
-role :db,  %w{deploy@104.131.136.236}, :primary => true
-set :branch, "master"
-set :rails_env, "staging"
-set :deploy_to, "/var/www/knt_do_staging"
-
-
-
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -30,7 +21,12 @@ set :deploy_to, "/var/www/knt_do_staging"
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
-
+role :app, %w{deploy@45.55.75.178}
+role :web, %w{deploy@45.55.75.178}
+role :db,  %w{deploy@45.55.75.178}, :primary => true
+set :branch, "master"
+set :rails_env, "staging"
+set :deploy_to, "/var/www/knt_do_staging"
 
 # Configuration
 # =============

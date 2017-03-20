@@ -1,20 +1,17 @@
 # config valid only for current version of Capistrano
 lock "3.8.0"
 
-set :application, "knt_do"
-set :repo_url, "git@github.com:mark172/knt_aws.git"
+set :application, 'knt_do'
+set :repo_url, 'git@github.com:mark172/knt_aws.git'
 
 set :user, "deploy"
+set :stages, %w(production staging)
 
-set :rbenv_type, :user # or :system, depends on your rbenv setup
-set :rbenv_ruby, '2.4.0'
 
 # set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 # set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 # set :rbenv_roles, :all # default value
 
-
-set :stages, %w(production staging)
 #append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
 # Default branch is :master
