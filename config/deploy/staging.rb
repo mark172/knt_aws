@@ -1,5 +1,7 @@
-server '104.131.136.236', user: 'deploy', roles: %w{app db web}
-set :branch, "staging"
+role :app, %w{deploy@104.131.136.236}
+role :web, %w{deploy@104.131.136.236}
+role :db,  %w{deploy@104.131.136.236}, :primary => true
+set :branch, "master"
 set :rails_env, "staging"
 set :deploy_to, "/var/www/knt_do_staging"
 
