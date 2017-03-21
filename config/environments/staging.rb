@@ -80,12 +80,13 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Add to both environment files for actionmailer
-  ActionMailer ::Base.smtp_settings = {
-   address:             'smtp.sendgrid.net',
-   domain:              'www.sharkwebdev.com',
-   user_name:            ENV["EMAIL_USERNAME" ],
-   password:             ENV["EMAIL_PASSWORD" ],
-   port:                 587,
-   authentication:       :plain,
-   enable_starttls_auto: true }
+  ActionMailer::Base.smtp_settings = {
+    :user_name => ENV['MAIL_USERNAME'],
+    :password => ENV['MAIL_PASSWORD'],
+    :domain => 'sharkwebdev.com',
+    :address => 'smtp.sendgrid.net',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
 end
