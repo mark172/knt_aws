@@ -29,7 +29,7 @@ test:
 production:
  adapter: postgresql
  encoding: unicode
- database: knt_do_production
+ database: knt_production
  password: <%= ENV["DATABASE_PASSWORD"] %>
  pool: 5
  timeout: 5000
@@ -37,7 +37,7 @@ production:
 staging:
  adapter: postgresql
  encoding: unicode
- database: knt_do_staging
+ database: knt_staging
  password: <%= ENV["DATABASE_PASSWORD"] %>
  pool: 5
  timeout: 5000

@@ -21,12 +21,12 @@
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
-role :app, %w{deploy@45.55.75.178}
-role :web, %w{deploy@45.55.75.178}
-role :db,  %w{deploy@45.55.75.178}, :primary => true
+role :app, %w{deploy@45.33.41.246}
+role :web, %w{deploy@45.33.41.246}
+role :db,  %w{deploy@45.33.41.246}, :primary => true
 set :branch, "master"
 set :rails_env, "staging"
-set :deploy_to, "/var/www/knt_do_staging"
+set :deploy_to, "/var/www/knt_staging"
 
 # Configuration
 # =============
