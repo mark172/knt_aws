@@ -28,16 +28,17 @@ test:
 
 production:
  adapter: postgresql
- encoding: unicode
- database: knt_production
- password: <%= ENV["DATABASE_PASSWORD"] %>
  pool: 5
  timeout: 5000
+ database: knt_production
+ username: deploy
+ password: <%= ENV["DATABASE_PASSWORD"] %>
+
 
 staging:
  adapter: postgresql
- encoding: unicode
- database: knt_staging
- password: <%= ENV["DATABASE_PASSWORD"] %>
  pool: 5
  timeout: 5000
+ database: knt_staging
+ username: deploy
+ password: <%= ENV["DATABASE_PASSWORD"] %>
