@@ -31,4 +31,7 @@ class PagesController < ApplicationController
   def reticle
     @title = "Reticle | Kamea Networks"
   end
+
+  def links
+  end
 end

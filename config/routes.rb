@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get '/bellissimail' => 'pages#bellissimail'
   get '/staffing' => 'pages#staffing'
   get '/reticle' => 'pages#reticle'
+  get '/links' => 'pages#links'
   
   match "/404", :to => "errors#not_found", :via => :all
   match "/500", :to => "errors#internal_server_error", :via => :all
