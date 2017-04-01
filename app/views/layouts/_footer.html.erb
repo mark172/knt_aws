@@ -24,6 +24,12 @@
                             <br>
                             <hr>
                             <p>All names, including but not limited to KameaKare, ZOTA, Reticle, Bellissimail, the stylized URL logo, and all other graphic work and content is trademarked and copyright protected as needed.</p>
+                            </br>
+                            <% if current_admin %>
+                              <%= link_to "Logout", destroy_admin_session_path, method: :delete %> | <%=link_to "KameaKare Console", links_path %>
+                              <% else %>
+                              <p><%= link_to "Admin", new_admin_session_path %></p>
+                            <% end %>
                         </div>
                     </div>
                 </div>

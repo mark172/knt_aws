@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  before_filter :authenticate_admin!, only: [:links]
   def index
     @title = "High-Quality Managed IT Services: KameaKare, ZOTA | Kamea Networks"
     @meta_description = "Providing managed IT services, KameaKare, ZOTA, Bellissimail and other high-quality services. Click to see more!"
