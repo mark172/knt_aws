@@ -36,6 +36,9 @@ gem 'pg'
 
 gem "animate-rails"
 
+# Devise for authentication
+gem 'devise'
+
 #gem 'unicorn', '~> 5.1'
 
 # Use ActiveModel has_secure_password
