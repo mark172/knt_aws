@@ -51,6 +51,9 @@
                     </ul>
                 </li>
                 <li class="<%= 'active' if current_page?(new_contact_path) %>"><%= link_to "Contact Us", new_contact_path %></li>
+                <% if current_admin %>
+                 <li class="<%= 'active' if current_page?(links_path) %>"><%= link_to "KameaKare Console", links_path %></li>
+                <% end %>
              </ul>
         </div><!-- navbar-collapse -->
     </div><!-- container -->
