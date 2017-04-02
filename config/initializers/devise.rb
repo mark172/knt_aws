@@ -14,8 +14,8 @@ Devise.setup do |config|
   # with default "from" parameter.
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
 
-  #config.secret_key = ENV['DEVISE_SECRET_KEY'] ? Rails.env.production? : Rails.env.staging?
-  config.secret_key = 'f9ba14bc4ec7cb4fb8969e15cf12bd7ac8e5f6b19c7d76255a87b8a102ec8af34e276dcc032cd62be0d04b23e7e3bde73112cd5ac6baa8f9956ddc10931ab98c'
+  config.secret_key = ENV['DEVISE_SECRET_KEY'] ? Rails.env.production? : Rails.env.staging?
+  # config.secret_key = 'f9ba14bc4ec7cb4fb8969e15cf12bd7ac8e5f6b19c7d76255a87b8a102ec8af34e276dcc032cd62be0d04b23e7e3bde73112cd5ac6baa8f9956ddc10931ab98c'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
