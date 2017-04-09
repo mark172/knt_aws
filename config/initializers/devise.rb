@@ -15,7 +15,18 @@ Devise.setup do |config|
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
 
   # config.secret_key = ENV['DEVISE_SECRET_KEY'] ? Rails.env.production? : Rails.env.staging?
+<<<<<<< HEAD
   config.secret_key = ENV["DEVISE_SECRET_KEY"] if Rails.env.staging?
+=======
+  #config.secret_key = ENV["DEVISE_SECRET_KEY"] if Rails.env.production?
+
+  if Rails.env == 'staging'
+    config.secret_key = ENV["STAGING_DEVISE_SECRET_KEY"]
+  elsif Rails.env == 'production'
+    config.secret_key = ENV["PRODUCTION_DEVISE_SECRET_KEY"]
+  end
+    
+>>>>>>> production
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'

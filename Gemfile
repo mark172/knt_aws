@@ -3,7 +3,9 @@ source 'https://rubygems.org'
 #gem 'dotenv-rails', groups: [:development, :test, :production]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "figaro"
+
 gem 'capistrano-figaro-yml', '~> 1.0.2'
+
 
 gem 'rails', '5.0.1'
 # Use SCSS for stylesheets
@@ -61,6 +63,7 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   # gem 'sqlite3'
   gem 'capistrano', '~> 3.8'
+  gem 'capistrano-figaro-yml', '~> 1.0.2'
   gem 'capistrano-rails', '~> 1.2'
   gem 'capistrano-passenger'
   gem 'capistrano-rvm'
