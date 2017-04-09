@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'dotenv-rails', groups: [:development, :test, :production]
+#gem 'dotenv-rails', groups: [:development, :test, :production]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'capistrano-dotenv-tasks', require: false
+gem "figaro"
 
 gem 'rails', '5.0.1'
 # Use SCSS for stylesheets
